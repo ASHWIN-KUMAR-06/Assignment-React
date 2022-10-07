@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./App.css";
 
-
-
 function Row({name, email, status}) {
   return (
     <>
@@ -18,9 +16,6 @@ function Row({name, email, status}) {
 
 function App() {
   const [list, setList] = useState([]);
-
-
-
 
   function callapi() {
     fetch("https://demo2211087.mockable.io/mock", {
@@ -41,7 +36,6 @@ function App() {
   useEffect(()=>{
     callapi();
   }, [])
-
 
 
   return(
@@ -101,8 +95,6 @@ function App() {
           </table>
 
         </section>
-
-
 
       </div>
     </>
